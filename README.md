@@ -6,7 +6,7 @@ A lightweight, efficient command-line text and file analyzer written in Rust. Th
 
 ## 🛠️ Project Structure
 
-
+```text
 file_analyzer/
 ├── Cargo.toml          # Project metadata and configuration
 ├── README.md            # Project documentation
@@ -29,14 +29,15 @@ file_analyzer/
 cargo run -- "<pattern>" <file_path>
 ```
 
-### Example:
-```
-### Text search mode:
+### Example 1 (Text search mode):
+```bash
 cargo run -- "Rust" test.txt
 ```
-```
-### File finder mode
+### Example 2 (File finder mode):
+```bash
 cargo run -- --find "LEASE" "C:\Users\your_username\Documents"
+```
+
 ---
 
 ## 💡 Rust Techniques Implemented
