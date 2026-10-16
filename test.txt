@@ -1,0 +1,4 @@
+Hello Rust. 
+This is a simple text file.
+Learning Rust is fun!
+Rust CLI search tool.

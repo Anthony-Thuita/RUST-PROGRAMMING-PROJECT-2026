@@ -1,0 +1,9 @@
+[package]
+name = "file_analyzer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pdf-extract = "0.7"
+quick-xml = "0.37"
+zip = "9.0.4"
