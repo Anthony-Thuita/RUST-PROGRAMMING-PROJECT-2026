@@ -1,12 +1,12 @@
 # CLI File Search & Text Analyzer
 
-A lightweight, efficient command-line text analyzer written in Rust. This utility scans a specified text file line-by-line, identifies lines matching a given search pattern, and displays matches along with line numbers and summary statistics.
+A lightweight, efficient command-line text and file analyzer written in Rust. This utility scans a specified text file line-by-line, identifies lines matching a given search pattern, and displays matches along with line numbers and summary statistics and also recursively scans directories to find files matching a specific keyword.
 
 ---
 
 ## 🛠️ Project Structure
 
-```text
+
 file_analyzer/
 ├── Cargo.toml          # Project metadata and configuration
 ├── README.md            # Project documentation
@@ -15,6 +15,7 @@ file_analyzer/
     ├── main.rs         # Application entry point & file processing logic
     ├── config.rs       # Command-line argument parsing and configuration
     └── error.rs        # Custom error types and conversion implementations
+    └── reader.rs       # Handles opening and extracting text based on file extensions
 ```
 
 ---
@@ -29,10 +30,13 @@ cargo run -- "<pattern>" <file_path>
 ```
 
 ### Example:
-```bash
+```
+### Text search mode:
 cargo run -- "Rust" test.txt
 ```
-
+```
+### File finder mode
+cargo run -- --find "LEASE" "C:\Users\your_username\Documents"
 ---
 
 ## 💡 Rust Techniques Implemented
