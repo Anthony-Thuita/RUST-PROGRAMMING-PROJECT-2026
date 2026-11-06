@@ -35,7 +35,7 @@ cargo run -- "Rust" test.txt
 ```
 ### Example 2 (File finder mode):
 ```bash
-cargo run -- --find "LEASE" "C:\Users\your_username\Documents"
+cargo run -- --find "LEASE" "C:\Users\your_username\Documents\"
 ```
 
 ---
